@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-// ⚠️ ඔයාගේ actual production domain එකට වෙනස් කරන්න
-const SITE_URL = "https://lithavi.com";
+// production domain
+const SITE_URL = "https://www.lithavi.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
