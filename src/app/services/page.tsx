@@ -96,7 +96,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex shrink-0 lg:w-32 lg:justify-center">
                     <span
-                      className="flex h-20 w-20 shrink-0 items-center justify-center rounded-[var(--radius-lg)]"
+                      className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg"
                       style={{ background: "var(--color-paper)" }}
                     >
                       <Icon size={30} style={{ color: "var(--color-navy-900)" }} />
