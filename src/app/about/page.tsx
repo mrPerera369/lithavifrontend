@@ -6,9 +6,9 @@ import StandardsCards from "@/components/StandardsCards";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Lithavi International",
+  title: "About Us",
   description:
-    "Lithavi International is a Sri Lanka-based quantity surveying and cost consulting practice delivering standards-led, remote QS support to clients worldwide.",
+    "Learn about Lithavi International, a remote quantity surveying firm providing accurate takeoffs, BOQs and cost management services worldwide.",
   alternates: { canonical: "/about" },
 };
 

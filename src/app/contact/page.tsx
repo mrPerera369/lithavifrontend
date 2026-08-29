@@ -8,9 +8,9 @@ import { getSiteSettings } from "@/lib/api";
 const DEFAULT_MAP_URL = "https://www.google.com/maps?q=Sri+Lanka&output=embed";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Lithavi International",
+  title: "Contact Us",
   description:
-    "Get in touch with Lithavi International for a free, customised quantity surveying and cost consulting quotation. Serving clients worldwide, remotely from Sri Lanka.",
+    "Contact Lithavi International for a free quotation on quantity takeoffs, BOQs and construction cost management services, delivered remotely worldwide.",
   alternates: { canonical: "/contact" },
 };
 

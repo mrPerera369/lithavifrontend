@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     template: "%s | Lithavi International",
   },
   description:
-    "Lithavi International provides accurate, reliable quantity takeoff, BOQ preparation, cost estimation and cost management for construction projects worldwide, from a Sri Lanka-based team serving clients remotely.",
+    "Lithavi International provides professional quantity surveying, BOQ preparation, cost estimation and cost management for construction projects worldwide.",
   openGraph: {
     type: "website",
     siteName: "Lithavi International",
     title: "Lithavi International | Quantity Surveying & Cost Consulting",
     description:
-      "Quantity surveying and cost consulting for construction projects worldwide, delivered remotely from Sri Lanka.",
+      "Professional quantity surveying, BOQ preparation and cost management services for construction projects worldwide.",
     url: SITE_URL,
     
     images: ["/assets/images/og-image.jpg"],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lithavi International | Quantity Surveying & Cost Consulting",
     description:
-      "Quantity surveying and cost consulting for construction projects worldwide, delivered remotely from Sri Lanka.",
+      "Professional quantity surveying, BOQ preparation and cost management services for construction projects worldwide.",
     images: ["/assets/images/og-image.jpg"],
   },
   robots: {
@@ -53,7 +53,7 @@ const organizationSchema = {
   "@type": "ProfessionalService",
   name: "Lithavi International",
   description:
-    "Quantity surveying and cost consulting for construction projects worldwide, delivered remotely from Sri Lanka.",
+    "Professional quantity surveying, BOQ preparation and cost management services for construction projects worldwide.",
   url: SITE_URL,
   areaServed: "Worldwide",
   address: {

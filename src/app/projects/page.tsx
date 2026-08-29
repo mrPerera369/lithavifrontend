@@ -5,35 +5,12 @@ import ProjectsGrid from "@/components/ProjectsGrid";
 
 export const metadata: Metadata = {
   title:
-    "Quantity Surveying Projects | Takeoff, BOQ & Cost Management | Lithavi International",
+    "Quantity Surveying Projects",
 
   description:
-    "Explore construction projects supported by Lithavi International through detailed quantity takeoff, 2D & 3D BIM 5D measurement, BOQ preparation, tender pricing, MTO, MEP quantity surveying, payment certification and commercial management.",
+    "Explore construction projects supported by Lithavi International through quantity takeoffs, BOQs, BIM 5D measurement and cost management.",
 
-  keywords: [
-    "quantity surveying projects",
-    "quantity takeoff projects",
-    "construction quantity takeoff",
-    "2D quantity takeoff",
-    "3D BIM 5D quantity takeoff",
-    "BOQ preparation",
-    "bill of quantities",
-    "tender bidding support",
-    "construction rate analysis",
-    "material takeoff",
-    "MTO services",
-    "BOM preparation",
-    "MEP quantity surveying",
-    "MEP quantity takeoff",
-    "interim payment application",
-    "interim payment certificate verification",
-    "variation management",
-    "final account management",
-    "construction cost management",
-    "quantity surveying services",
-    "remote quantity surveying",
-    "Lithavi International",
-  ],
+  
 
   alternates: {
     canonical: "/projects",
@@ -41,9 +18,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Quantity Surveying Projects | Takeoff, BOQ & Cost Management | Lithavi International",
+      "Quantity Surveying Projects",
     description:
-      "Explore selected construction projects supported by Lithavi International across quantity takeoff, BOQ preparation, BIM 5D measurement, tender pricing, MEP costing and commercial management.",
+      "Explore selected construction projects supported by Lithavi International through quantity takeoff, BOQ preparation, BIM 5D measurement and cost management.",
     url: "/projects",
     siteName: "Lithavi International",
     type: "website",

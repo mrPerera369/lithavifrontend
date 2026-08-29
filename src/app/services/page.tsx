@@ -15,9 +15,9 @@ import DimensionLine from "@/components/DimensionLine";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services | Lithavi International",
+  title: "Our Services",
   description:
-    "Quantity takeoff, BOQ preparation, tender bidding support, MEP costing, IPA/IPC and final account services from Lithavi International, delivered to POMI, NRM2, CESMM4 and CSI MasterFormat standards.",
+    "Professional quantity surveying, BOQ preparation, cost estimation and construction cost management services for projects worldwide.",
   alternates: { canonical: "/services" },
 };
 

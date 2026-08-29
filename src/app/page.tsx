@@ -9,7 +9,7 @@ import ClientVoices from "@/components/ClientVoices";
 export const metadata: Metadata = {
   title: "Lithavi International | Quantity Surveying & Cost Consulting",
   description:
-    "Lithavi International provides accurate, reliable quantity takeoff, BOQ preparation, cost estimation and cost management for construction projects worldwide, from a Sri Lanka-based team serving clients remotely.",
+    "Lithavi International provides professional quantity surveying, BOQ preparation, cost estimation and cost management for construction projects worldwide.",
   alternates: { canonical: "/" },
 };
 
