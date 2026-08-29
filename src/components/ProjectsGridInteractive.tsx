@@ -226,7 +226,7 @@ export default function ProjectsGridInteractive({
       ========================================================= */}
       {selectedProject && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6"
+          className="fixed inset-0 z-9999 flex items-center justify-center p-4 sm:p-6"
           style={{
             background: "rgba(10, 20, 35, 0.72)",
             backdropFilter: "blur(6px)",
@@ -278,10 +278,10 @@ export default function ProjectsGridInteractive({
                 <img
                   src={selectedProject.image}
                   alt={`${selectedProject.company} project`}
-                  className="h-full min-h-[520px] w-full object-cover"
+                  className="h-full min-h-130 w-full object-cover"
                 />
               ) : (
-                <div className="flex h-full min-h-[520px] items-center justify-center">
+                <div className="flex h-full min-h-130 items-center justify-center">
                   <div className="flex flex-col items-center justify-center">
                     <ImageOff
                       size={52}
