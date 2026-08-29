@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -13,6 +12,7 @@ import {
   ImageOff,
   X,
 } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 import type { Project } from "@/lib/api";
 
 const CATEGORIES = [
@@ -75,7 +75,6 @@ export default function ProjectsGridInteractive({
     <>
       {/* =========================================================
           FILTER TABS
-          Hidden for now — functionality is kept for future use.
       ========================================================= */}
       <div
         className="mt-10 hidden flex-wrap gap-2"
@@ -181,8 +180,7 @@ export default function ProjectsGridInteractive({
                       className="mt-3 text-xs font-medium uppercase"
                       style={{
                         color: "var(--color-slate-500)",
-                        letterSpacing:
-                          "var(--tracking-eyebrow)",
+                        letterSpacing: "var(--tracking-eyebrow)",
                       }}
                     >
                       No Photo
@@ -205,16 +203,42 @@ export default function ProjectsGridInteractive({
                 </p>
 
                 {/* DESCRIPTION — 2 LINES ONLY */}
-                <p
-                  className="mt-3 line-clamp-2"
+                <div
+                  className="project-card-description mt-3 line-clamp-2 overflow-hidden"
                   style={{
                     color: "var(--color-slate-600)",
                     fontSize: "var(--fs-body-sm)",
                     lineHeight: "1.7",
                   }}
                 >
-                  {project.description}
-                </p>
+                  <ReactMarkdown
+                    components={{
+                      p: ({ children }) => (
+                        <span>{children}</span>
+                      ),
+                      ul: ({ children }) => (
+                        <span>{children}</span>
+                      ),
+                      li: ({ children }) => (
+                        <span className="mr-1">
+                          • {children}
+                        </span>
+                      ),
+                      strong: ({ children }) => (
+                        <strong
+                          style={{
+                            color: "var(--color-navy-950)",
+                            fontWeight: 600,
+                          }}
+                        >
+                          {children}
+                        </strong>
+                      ),
+                    }}
+                  >
+                    {project.description}
+                  </ReactMarkdown>
+                </div>
               </div>
             </button>
           );
@@ -295,8 +319,7 @@ export default function ProjectsGridInteractive({
                       className="mt-4 text-xs font-medium uppercase"
                       style={{
                         color: "var(--color-slate-500)",
-                        letterSpacing:
-                          "var(--tracking-eyebrow)",
+                        letterSpacing: "var(--tracking-eyebrow)",
                       }}
                     >
                       No Photo
@@ -310,7 +333,7 @@ export default function ProjectsGridInteractive({
                 RIGHT — CONTENT
             ================================================= */}
             <div className="flex min-w-0 flex-1 flex-col">
-              {/* Mobile Image */}
+              {/* MOBILE IMAGE */}
               <div
                 className="block h-56 w-full shrink-0 overflow-hidden lg:hidden"
                 style={{
@@ -337,7 +360,9 @@ export default function ProjectsGridInteractive({
                 )}
               </div>
 
-              {/* Scrollable Content */}
+              {/* =================================================
+                  SCROLLABLE CONTENT
+              ================================================= */}
               <div className="min-h-0 flex-1 overflow-y-auto">
                 <div className="p-7 sm:p-10 lg:p-12">
                   {/* COMPANY */}
@@ -354,14 +379,92 @@ export default function ProjectsGridInteractive({
 
                   {/* FULL DESCRIPTION */}
                   <div
-                    className="mt-7"
+                    className="project-modal-description mt-7"
                     style={{
                       color: "var(--color-slate-600)",
                       fontSize: "var(--fs-body)",
                       lineHeight: "1.8",
                     }}
                   >
-                    {selectedProject.description}
+                    <ReactMarkdown
+                      components={{
+                        p: ({ children }) => (
+                          <p className="mb-6">
+                            {children}
+                          </p>
+                        ),
+
+                        ul: ({ children }) => (
+                          <ul className="mb-7 list-disc space-y-3 pl-6">
+                            {children}
+                          </ul>
+                        ),
+
+                        ol: ({ children }) => (
+                          <ol className="mb-7 list-decimal space-y-3 pl-6">
+                            {children}
+                          </ol>
+                        ),
+
+                        li: ({ children }) => (
+                          <li className="leading-7">
+                            {children}
+                          </li>
+                        ),
+
+                        strong: ({ children }) => (
+                          <strong
+                            style={{
+                              color: "var(--color-navy-950)",
+                              fontWeight: 650,
+                            }}
+                          >
+                            {children}
+                          </strong>
+                        ),
+
+                        h1: ({ children }) => (
+                          <h1
+                            className="mb-5 mt-2"
+                            style={{
+                              color: "var(--color-navy-950)",
+                              fontFamily: "var(--font-display)",
+                              fontSize: "var(--fs-h4)",
+                            }}
+                          >
+                            {children}
+                          </h1>
+                        ),
+
+                        h2: ({ children }) => (
+                          <h2
+                            className="mb-5 mt-8"
+                            style={{
+                              color: "var(--color-navy-950)",
+                              fontFamily: "var(--font-display)",
+                              fontSize: "var(--fs-h4)",
+                            }}
+                          >
+                            {children}
+                          </h2>
+                        ),
+
+                        h3: ({ children }) => (
+                          <h3
+                            className="mb-4 mt-7"
+                            style={{
+                              color: "var(--color-navy-950)",
+                              fontFamily: "var(--font-display)",
+                              fontSize: "var(--fs-h5)",
+                            }}
+                          >
+                            {children}
+                          </h3>
+                        ),
+                      }}
+                    >
+                      {selectedProject.description}
+                    </ReactMarkdown>
                   </div>
                 </div>
               </div>
@@ -372,4 +475,3 @@ export default function ProjectsGridInteractive({
     </>
   );
 }
-
