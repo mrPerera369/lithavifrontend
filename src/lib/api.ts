@@ -62,11 +62,11 @@ export function getTestimonials() {
 }
 
 export function getServicesFAQ() {
-  return safeFetchJson<FAQ[]>("/api/services-faq/", []);
+  return safeFetchJson<FAQ[]>("/api/services-faq/", [], 300);
 }
 
 export function getProjects() {
-  return safeFetchJson<Project[]>("/api/projects/", []);
+  return safeFetchJson<Project[]>("/api/projects/", [], 300);
 }
 
 export function getSiteSettings() {
