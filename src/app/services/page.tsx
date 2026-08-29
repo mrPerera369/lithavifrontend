@@ -19,6 +19,22 @@ export const metadata: Metadata = {
   description:
     "Professional quantity surveying, BOQ preparation, cost estimation and construction cost management services for projects worldwide.",
   alternates: { canonical: "/services" },
+   robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title:
+      "Quantity Surveying, Takeoff & BOQ Services | Lithavi International",
+
+    description:
+      "Professional quantity surveying, construction quantity takeoff, BOQ preparation, cost estimation and commercial management services worldwide.",
+
+    url: "/services",
+    siteName: "Lithavi International",
+    type: "website",
+  },
 };
 
 const SERVICES = [
@@ -70,7 +86,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our Services"
         title="Quantity surveying and cost consulting, end to end."
-        intro="From the first digital takeoff to final account, Lithavi International supports contractors, developers, architects and engineers through every commercial stage of a construction project."
+        intro="Lithavi International provides professional quantity surveying, construction quantity takeoff, BOQ preparation, cost estimation and commercial management services for contractors, developers, architects and engineers worldwide."
       />
 
       <section className="py-24 lg:py-32" style={{ background: "var(--color-white)" }}>
@@ -78,7 +94,7 @@ export default function ServicesPage() {
           <div className="max-w-2xl">
             <DimensionLine tone="navy" label="What We Deliver" />
             <h2 className="mt-6" style={{ fontSize: "var(--fs-h2)", lineHeight: "var(--lh-tight)" }}>
-              Eight core services, one consistent standard of accuracy.
+              Professional Quantity Takeoff, BOQ & Cost Management Services
             </h2>
           </div>
 

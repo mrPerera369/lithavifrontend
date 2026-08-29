@@ -18,25 +18,22 @@ export default function Hero() {
         <div className="max-w-xl">
           <DimensionLine tone="gold" label="Quantity Surveying & Cost Consulting" />
           <h1
-            className="mt-6 font-semibold"
+            className="mt-6 text-[3.25rem] sm:text-[3.75rem] lg:text-(--fs-display) font-semibold"
             style={{
-              fontSize: "var(--fs-display)",
+             
               lineHeight: "var(--lh-tight)",
               color: "var(--color-white)",
             }}
           >
-            Every quantity measured. Every cost accounted for.
+            Professional Quantity Surveying & Construction Cost Management
           </h1>
           <p
             className="mt-7 max-w-lg"
             style={{ color: "rgba(255,255,255,0.78)", fontSize: "var(--fs-h5)", lineHeight: "var(--lh-normal)" }}
           >
-            Lithavi International delivers accurate quantity takeoffs, BOQs
-            and cost estimates for contractors, developers, architects and
-            engineers — remotely, worldwide, from a Sri Lanka&ndash;based
-            team of quantity surveyors.
+            Lithavi International delivers accurate construction quantity takeoffs, BOQ preparation, cost estimation and 5D BIM measurement services for contractors, developers, architects and engineers worldwide.
           </p>
-
+{/* Core services */} <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium" style={{ color: "rgba(255,255,255,0.72)" }} > <span>Quantity Takeoff</span> <span aria-hidden="true">•</span> <span>BOQ Preparation</span> <span aria-hidden="true">•</span> <span>Cost Estimation</span> <span aria-hidden="true">•</span> <span>5D BIM</span> </div>
           <div className="mt-10 flex flex-wrap items-center gap-5">
             <Link
               href="/contact"

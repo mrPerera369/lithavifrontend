@@ -9,13 +9,12 @@ export default async function ServicesFAQ() {
     <section className="py-24 lg:py-32" style={{ background: "var(--color-paper)" }}>
       <div className="container-page grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <DimensionLine tone="navy" label="FAQ" />
+          <DimensionLine tone="navy" label="Quantity Surveying FAQ" />
           <h2 className="mt-6 max-w-sm" style={{ fontSize: "var(--fs-h2)", lineHeight: "var(--lh-tight)" }}>
-            Questions we&rsquo;re asked before a project starts.
+            Quantity Surveying, Takeoff & BOQ FAQs
           </h2>
           <p className="mt-5 max-w-sm" style={{ color: "var(--color-slate-600)", fontSize: "var(--fs-body)" }}>
-            Don&rsquo;t see your question here? Get in touch and we&rsquo;ll
-            answer it directly.
+            Find answers to common questions about quantity surveying, quantity takeoff, BOQ preparation, cost estimation and our construction measurement services.
           </p>
         </div>
 

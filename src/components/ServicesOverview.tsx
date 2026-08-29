@@ -8,7 +8,7 @@ import Link from "next/link";
 const CATEGORIES = [
   {
     key: "measurement",
-    label: "Measurement & Takeoff",
+    label: "Quantity Takeoff & Measurement",
     icon: Ruler,
     intro:
       "Our core discipline accurate quantities taken directly from drawings, to recognised international standards.",
@@ -80,13 +80,12 @@ export default function ServicesOverview() {
     <section id="services" className="py-24 lg:py-32" style={{ background: "var(--color-white)" }}>
       <div className="container-page">
         <div className="max-w-2xl">
-          <DimensionLine tone="navy" label="What We Do" />
+          <DimensionLine tone="navy" label="Our Quantity Surveying Services" />
           <h2 className="mt-6" style={{ fontSize: "var(--fs-h2)", lineHeight: "var(--lh-tight)" }}>
-            Quantity surveying services, organised the way a project actually runs.
+            Quantity Surveying, Quantity Takeoff & BOQ Services
           </h2>
           <p className="mt-5" style={{ color: "var(--color-slate-600)", fontSize: "var(--fs-h5)" }}>
-            Twenty-eight services across four disciplines. Quantity Takeoff
-            and BOQ Preparation are where every engagement starts.
+            Professional quantity surveying services covering quantity takeoff, BOQ preparation, cost estimation, commercial management and tender support for construction projects worldwide.
           </p>
         </div>
 
