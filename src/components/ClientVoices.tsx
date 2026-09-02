@@ -24,7 +24,7 @@ export default async function ClientVoices() {
               lineHeight: "var(--lh-tight)",
             }}
           >
-            What clients can expect from working with us.
+            What Clients Can Expect From Working With Us
           </h2>
 
           <p
@@ -34,9 +34,8 @@ export default async function ClientVoices() {
               fontSize: "var(--fs-h5)",
             }}
           >
-            We&rsquo;re a growing practice, still building our published
-            portfolio of client testimonials. In the meantime, here is
-            exactly what every client can rely on.
+            We deliver accurate quantity surveying and construction cost management solutions with a focus on quality, reliability, and clear communication.
+
           </p>
 
           {expectations.length > 0 && (
