@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 const SITE_URL = "https://www.lithavi.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // "/projects" temporarily removed — page eka hide karala thiyana nisa
+  
   const routes = ["", "/about", "/services", "/projects", "/contact"];
 
   return routes.map((route) => ({

@@ -25,6 +25,23 @@ export const metadata: Metadata = {
   },
   description:
     "Lithavi International provides professional quantity surveying, BOQ preparation, cost estimation and cost management for construction projects worldwide.",
+
+  icons: {
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/assets/images/icon.png",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/assets/images/apple-touch-icon.png",
+  },
+    
+
   openGraph: {
     type: "website",
     siteName: "Lithavi International",
