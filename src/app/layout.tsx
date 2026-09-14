@@ -68,10 +68,13 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#organization`,
   name: "Lithavi International",
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/images/icon.png`,
+  image: `${SITE_URL}/assets/images/og-image.jpg`,
   description:
     "Professional quantity surveying, BOQ preparation and cost management services for construction projects worldwide.",
-  url: SITE_URL,
   areaServed: "Worldwide",
   address: {
     "@type": "PostalAddress",
